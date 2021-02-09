@@ -16,113 +16,41 @@
 <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 
 
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
 </head>
 <body>
 
-<div class="mobileMenu">
-
-    <a href="#nav" class="menu-button" role="button" aria-label="Open Navigation" data-swipe-open>
+<div class="mobile-menu">
+    <div class="hamburger-menu js-toggle">
         <i class="fa fa-bars" aria-hidden="true"></i>
-    </a>
+    </div>
 
-    <nav class="swipe-nav" id="nav" data-swipe-drawer data-swipe-open-class="swipe-nav--open">
-        <a href="#0" class="swipe-nav__overlay" role="button" aria-label="Close Navigation" tabindex="-1" data-swipe-overlay>&nbsp;</a>
+    <div class="mobile__menu">
+        <div class="mobile__menu-wrap">
 
-        <div class="swipe-nav__panel" data-swipe-panel>
-            <div class="swipe-nav__scroller">
-                <div class="swipe-nav__inner">
-
-                    <div class="mobile-menu__content">
-
-
-                        <div class="mobile-content__wrap">
-
-                            <div class="header__contacts">
-                                <h6>Call-центр</h6>
-                                <a href="tel:998 78 120 2323">998 78 120 2323</a>
-
-                            </div>
-
-                            <ul class="mobile__language">
-                                <li>
-                                    <a href="#!">Ru</a>
-                                </li>
-
-                                <li>
-                                    <a href="#!">Uz</a>
-                                </li>
-
-                                <li>
-                                    <a href="#!">En</a>
-                                </li>
-                            </ul>
-
-                        </div>
-
-
-                    </div>
-
-                    <ul class="accordion" id="accordion">
-                        <li class="accordion__list">
-                            <div class="link">
-                                <span class="link__title">О нас</span>
-                                <i class="fa fa-chevron-down"></i>
-                            </div>
-                            <ul class="submenu">
-                                <li><a href="">submenu 2</a></li>
-                                <li><a href="">submenu 2</a></li>
-                                <li><a href="">submenu 2</a></li>
-                                <li><a href="">submenu 2</a></li>
-                            </ul>
-                        </li>
-                        <li class="accordion__list">
-                            <div class="link">
-                                <span class="link__title">Новости</span>
-                            </div>
-
-                        </li>
-                        <li class="accordion__list">
-                            <div class="link">
-                                <span class="link__title">Продукция</span>
-                            </div>
-                        </li>
-
-                        <li class="accordion__list">
-                            <div class="link">
-                                <span class="link__title">ЦТО</span>
-                                <i class="fa fa-chevron-down"></i>
-                            </div>
-                            <ul class="submenu">
-                                <li><a href="">submenu 4</a></li>
-                                <li><a href="">submenu 4</a></li>
-                                <li><a href="">submenu 4</a></li>
-                                <li><a href="">submenu 4</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="accordion__list">
-                            <div class="link">
-                                <span class="link__title">Ещё</span>
-                                <i class="fa fa-chevron-down"></i>
-                            </div>
-                            <ul class="submenu">
-                                <li><a href="">Часто задаваемые вопросы</a></li>
-                                <li><a href="">Видеоуроки</a></li>
-                                <li><a href="">Нормативные документы</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                </div>
-            </div>
         </div>
-    </nav>
+            <h2>Menu</h2>
+        <div class="js-toggle"><i class="fa fa-times" aria-hidden="true"></i></div>
+    </div>
 
-    <main>
-    </main>
-
-
+    <div class="menu-overlay js-toggle"></div>
 </div>
+
+
+<script>
+  $(document).on("click", ".js-toggle", function(e) {
+    e.preventDefault();
+    $("body").toggleClass("has-menu");
+  });
+
+</script>
 
 
 <header class="header">
@@ -132,60 +60,96 @@
                 <a href="index.html" class="header__logo">
                     <img src="./img/svg/logo.svg" alt="">
                 </a>
-
                 <div class="header__menu">
                     <ul class="header__menu-wrap">
-                        <li class="header__menu-item active dropdown">
-                            <a class="dropdown-toggle header__menu-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <li class="header__menu-item active has-dropdown">
+                            <a class="header__menu-link">
                                 Пассажирам
                             </a>
+                            <ul class="dropdown__menu">
+                                <li class="dropdown__item">
+                                    <a class="dropdown__link" href="transport-cards.html">Транспортные карты</a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a class="dropdown__link" href="preferential-cards.html">Льготные транспортные карты</a>
+                                </li>
+                                <li class="dropdown__item has-dropdown">
+                                    <a class="dropdown__link" href="#">Пополнение</a>
+                                    <ul class="dropdown__menu">
+                                        <li class="dropdown__item">
+                                            <a href="mobile-apps.html" class="dropdown__link">В мобильном приложении</a>
+                                        </li>
 
-                            <div class="dropdown-menu" aria-labelledby="">
-                                <a class="dropdown-item" href="transport-cards.html">Транспортные карты</a>
-                                <a class="dropdown-item" href="preferential-cards.html">Льготные транспортные карты</a>
-                                <a class="dropdown-item" href="#">Пополнение</a>
-                                <a class="dropdown-item" href="tariffs.html">Тарифы</a>
-                                <a class="dropdown-item" href="instruction.html">Инструкции</a>
-                                <a class="dropdown-item" href="#">FAQ</a>
-                            </div>
+                                        <li class="dropdown__item">
+                                            <a href="payment-apps" class="dropdown__link">Платежными приложениями</a>
+                                        </li>
+
+                                        <li class="dropdown__item">
+                                            <a href="terminal-network" class="dropdown__link">В сети терминалов</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a class="dropdown__link" href="tariffs.html">Тарифы</a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a class="dropdown__link" href="instruction.html">Инструкции</a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a class="dropdown__link" href="#">FAQ</a>
+                                </li>
+                            </ul>
                         </li>
 
-                        <li class="header__menu-item dropdown">
-                            <a class="dropdown-toggle header__menu-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <li class="header__menu-item">
+                            <a class="header__menu-link">
                                 Перевозчикам
                             </a>
 
-                            <div class="dropdown-menu" aria-labelledby="">
-                                <a class="dropdown-item" href="#">Условия сотрудничества</a>
-                                <a class="dropdown-item" href="validators.html">Валидаторы</a>
-                                <a class="dropdown-item" href="#">Партнерам</a>
-                            </div>
+                            <ul class="dropdown__menu">
+                                <li class="dropdown__item">
+                                    <a class="dropdown__link" href="#">Условия сотрудничества</a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a class="dropdown__link" href="validators.html">Валидаторы</a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a class="dropdown__link" href="#">Партнерам</a>
+                                </li>
+                            </ul>
                         </li>
 
-                        <li class="header__menu-item dropdown">
-                            <a class="dropdown-toggle header__menu-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <li class="header__menu-item">
+                            <a class="header__menu-link">
                                 О нас
                             </a>
-
-                            <div class="dropdown-menu" aria-labelledby="">
-                                <a class="dropdown-item" href="about.html">О нас</a>
-                                <a class="dropdown-item" href="guidance.html">Руководство</a>
-                                <a class="dropdown-item" href="vacancies.html">Вакансии</a>
-                                <a class="dropdown-item" href="branches.html">Филиалы</a>
-                                <a class="dropdown-item" href="documents.html">Документы</a>
-                            </div>
+                            <ul class="dropdown__menu">
+                                <li class="dropdown__item">
+                                    <a class="dropdown__link" href="about.html">О нас</a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a class="dropdown__link" href="guidance.html">Руководство</a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a class="dropdown__link" href="vacancies.html">Вакансии</a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a class="dropdown__link" href="branches.html">Филиалы</a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a class="dropdown__link" href="documents.html">Документы</a>
+                                </li>
+                            </ul>
                         </li>
-
 
                         <li class="header__menu-item">
                             <a href="news.html" class="header__menu-link">Новости</a>
                         </li>
 
-
                         <li class="header__menu-item">
                             <a href="feedback.html" class="header__menu-link">Контакты</a>
                         </li>
-
                     </ul>
                 </div>
             </div>
@@ -194,15 +158,19 @@
                      <a href="#!" class="header__contacts-link">+998 78 140 08 08</a>
                  </div>
 
-                <div class="dropdown header__language">
-                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="header__language">
+                    <a href="#">
                         Ru
                     </a>
 
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="#">Uz</a>
-                        <a class="dropdown-item" href="#">En</a>
-                    </div>
+                    <ul class="dropdown__menu">
+                        <li class="dropdown__item">
+                            <a class="dropdown__link" href="#">Uz</a>
+                        </li>
+                        <li class="dropdown__item">
+                            <a class="dropdown__link" href="#">En</a>
+                        </li>
+                    </ul>
                 </div>
 
                 <button class="secondary-btn header__right-btn">
@@ -620,8 +588,8 @@
 </body>
 
 <script src="libs/jquery-3.2.1.min.js"></script>
-<script src="libs/bootstrap/js/popper.js"></script>
 <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap/js/popper.js"></script>
 <script src="libs/fancybox-master/jquery.fancybox.min.js"></script>
 <script src="libs/jquery.matchHeight.js"></script>
 <script src="libs/aos/aos.js"></script>
