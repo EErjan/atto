@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @font-face {
   font-family: "Gilroy-Regular";
   font-display: swap;
@@ -175,6 +177,16 @@ ul li {
           box-shadow: 0 0 6px rgba(0, 0, 0, 0.16), 0 0 6px rgba(0, 0, 0, 0.23);
 }
 
+.mobile__menu-inner {
+  position: relative;
+}
+
+.mobile__menu-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
 .has-menu .mobile__menu {
   -webkit-transform: translate(0, 0);
       -ms-transform: translate(0, 0);
@@ -203,9 +215,154 @@ ul li {
 
 /* Mobile menu ends here */
 
-/* Media queries starts here */
+/* Mobile accordion starts here  */
 
-/* Media queries ends here */
+/* Mobile accordion starts here  */
+
+/** ==========================
+* Conentendor Principal
+=============================
+**/
+
+.accordion {
+  width: 100%;
+  margin: 0 0 10px 0;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 5px 0 rgba(0, 0, 0, 0.05);
+          box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 5px 0 rgba(0, 0, 0, 0.05);
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.accordion__list {
+  background: #FFF;
+  width: 100%;
+}
+
+.accordion__list .link {
+  font-size: 0.85em;
+  font-weight: 700;
+  color: #37474F;
+  cursor: pointer;
+  border-bottom: 1px solid #eae8e8;
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.accordion__list .link__title {
+  padding: 1.5em;
+  padding-left: 20px;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  display: block;
+  background-color: transparent;
+  color: #37474F;
+}
+
+.accordion li:last-child .link {
+  border-bottom: 0;
+}
+
+/** ========================
+* Diseño iconos font-awesome
+============================= **/
+
+.accordion li i {
+  position: absolute;
+  top: 1.5em;
+  left: 1rem;
+  font-size: 1em;
+  color: #595959;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.accordion li i.fa-chevron-down {
+  right: 12px;
+  left: auto;
+  font-size: 1.2em;
+}
+
+/**===================================
+* Conf. clase link al estar activo submenu (con js)
+====================================**/
+
+.accordion li.open .link {
+  color: #ff5252;
+}
+
+.accordion li.open i {
+  color: #282828;
+}
+
+.accordion li.open i.fa-chevron-down {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/**=======================
+* Submenu
+==========================**/
+
+.submenu {
+  display: none;
+  background: #fafafa;
+  font-size: 0.95em;
+}
+
+.submenu li {
+  /*border-bottom: 1px solid #fafafa;*/
+}
+
+.submenu a {
+  display: block;
+  text-decoration: none;
+  color: #232455;
+  padding: 1rem;
+  padding-left: 25px;
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.submenu__list li {
+  border-bottom: none;
+}
+
+.submenu__list-title {
+  background: #fff;
+  padding: 1rem;
+  padding-left: 25px;
+  color: #232455;
+  font-family: "SFProDisplay-Semibold", sans-serif;
+}
+
+.submenu__list-holder {
+  -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.submenu__list-holder.hide {
+  display: none;
+}
+
+.submenu__list-holder a {
+  padding: 15px 20px;
+  color: #232455;
+}
+
+/* Mobile accordion ends here */
 
 @-webkit-keyframes swing-in-top-fwd {
   0% {
@@ -279,6 +436,34 @@ ul li {
   }
 }
 
+@-webkit-keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+    transform: translateZ(-1400px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+    transform: translateZ(-1400px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
 @-webkit-keyframes swing-in-top-fwd {
   0% {
     -webkit-transform: rotateX(-100deg);
@@ -347,6 +532,34 @@ ul li {
     transform: rotateY(0);
     -webkit-transform-origin: left;
     transform-origin: left;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+    transform: translateZ(-1400px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+    transform: translateZ(-1400px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
     opacity: 1;
   }
 }
@@ -2605,6 +2818,10 @@ ul li {
 }
 
 @media (max-width: 1250px) {
+  .hamburger-menu {
+    display: block;
+  }
+
   .my-container {
     max-width: 991px;
   }
@@ -2656,12 +2873,6 @@ ul li {
 
   .header__menu {
     display: none;
-  }
-}
-
-@media (max-width: 1200px) {
-  .hamburger-menu {
-    display: block;
   }
 }
 
@@ -2759,10 +2970,38 @@ ul li {
   .header__contacts {
     display: none;
   }
+
+  .mobile__menu {
+    max-width: 300px;
+  }
 }
 
 @media (max-width: 500px) {
   .header__language {
     display: none;
+  }
+
+  .header__logo {
+    margin-right: 20px;
+    max-width: 80px;
+  }
+
+  .header__right-btn {
+    padding: 10px 10px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 380px) {
+  .mobile__menu {
+    max-width: 70%;
+  }
+
+  .hamburger-menu {
+    right: 15px;
+  }
+
+  .header__main {
+    padding-right: 40px;
   }
 }
