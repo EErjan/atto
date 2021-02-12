@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Index</title>
 
-  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="libs/aos/aos.css">
 <link rel="stylesheet" href="libs/font-awesome.min.css">
 <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
@@ -510,16 +510,17 @@
 
 </body>
 
-<div id="page-preloader"><span class="spinner"></span></div>
+<div id="page-preloader">
+    <span class="spinner"
+          style="background: url('img/loader.gif');
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+"
 
-<script>
-  $(window).on('load', function () {
-    var $preloader = $('#page-preloader'),
-        $spinner   = $preloader.find('.spinner');
-    $spinner.fadeOut();
-    $preloader.delay(350).fadeOut('slow');
-  });
-</script>
+    ></span>
+</div>
+
 
 <script src="libs/jquery-3.5.1.min.js"></script>
 <script src="libs/aos/aos.js"></script>
@@ -529,6 +530,15 @@
 <script src="libs/fancybox-master/jquery.fancybox.min.js"></script>
 <script src="js/main.js"></script>
 
+
+<script>
+  $(window).on('load', function () {
+    var $preloader = $('#page-preloader'),
+        $spinner   = $preloader.find('.spinner');
+    $spinner.fadeOut();
+    $preloader.delay(350).fadeOut('slow');
+  });
+</script>
 
 
 </html>

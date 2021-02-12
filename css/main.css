@@ -2351,7 +2351,7 @@ ul li {
   right: 0;
   bottom: 0;
   z-index: 100500;
-  background: #ffffff;
+  background: white;
 }
 
 #page-preloader .spinner {
@@ -2363,7 +2363,6 @@ ul li {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background: url("/img/loader.gif") no-repeat center center;
   background-size: contain;
   margin: -16px 0 0 -16px;
 }
