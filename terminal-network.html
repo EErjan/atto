@@ -10,7 +10,7 @@
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="libs/aos/aos.css">
 <link rel="stylesheet" href="libs/font-awesome.min.css">
-<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+<!--<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">-->
 <link rel="stylesheet" href="libs/reset.css">
 <link rel="stylesheet" href="libs/fancybox-master/jquery.fancybox.min.css">
 <link rel="stylesheet" href="css/main.min.css">
@@ -464,18 +464,6 @@
     </div>
 </footer>
 
-<div id="page-preloader">
-    <span class="spinner"
-          style="background: url('img/loader.gif');
-          background-repeat: no-repeat;
-          background-size: contain;
-          background-position: center;
-"
-
-    ></span>
-</div>
-
-
 <script src="libs/jquery-3.5.1.min.js"></script>
 <script src="libs/aos/aos.js"></script>
 <script src="libs/swiper/swiper-bundle.min.js"></script>
@@ -484,15 +472,6 @@
 <script src="libs/fancybox-master/jquery.fancybox.min.js"></script>
 <script src="js/main.js"></script>
 
-
-<script>
-  $(window).on('load', function () {
-    var $preloader = $('#page-preloader'),
-        $spinner   = $preloader.find('.spinner');
-    $spinner.fadeOut();
-    $preloader.delay(350).fadeOut('slow');
-  });
-</script>
 
 
 
