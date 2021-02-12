@@ -364,6 +364,14 @@ ul li {
 
 /* Mobile accordion ends here */
 
+.mobile__phone {
+  display: none;
+}
+
+.mobile__language {
+  display: none;
+}
+
 @-webkit-keyframes swing-in-top-fwd {
   0% {
     -webkit-transform: rotateX(-100deg);
@@ -3152,6 +3160,18 @@ ul li {
     padding: 15px 25px;
     border-radius: 6px;
   }
+
+  .mobile__phone {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 20px 15px;
+  }
+
+  .mobile__phone .header__contacts {
+    display: block;
+    margin-right: 5px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -3300,6 +3320,24 @@ ul li {
 
   .feedback__wrap {
     width: 100%;
+  }
+
+  .mobile__language {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 5px 20px;
+    margin-bottom: 20px;
+  }
+
+  .mobile__language-item {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-right: 10px;
+    font-size: 14px;
+    color: #232455;
+    font-family: "SFProDisplay-Semibold", sans-serif;
   }
 }
 
