@@ -1693,6 +1693,9 @@ ul li {
   color: #8384a3;
   font-size: 14px;
   margin-bottom: 8px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .feedback__item .form__group input {
