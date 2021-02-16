@@ -5,7 +5,7 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Index</title>
+  <title>History</title>
 
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="libs/aos/aos.css">
@@ -18,6 +18,7 @@
 
 
 
+  <link rel="stylesheet" type="text/css" href="libs/datepicker/datepicker.min.css">
 
 </head>
 <body>
@@ -468,102 +469,170 @@
 </div>
 
 
-<main class="main">
+<main class="main cabinet">
 
   <div class="my-container">
     <div class="content__holder">
       <div class="sidebar">
     <ul class="sidebar__wrapper">
-        <li class="sidebar__item">
-            <a href="transport-cards.html" class="sidebar__link active">Транспортные карты</a>
+        <li class="sidebar__item active">
+            <a href="routes.html" class="sidebar__link ">
+                Маршрут
+            </a>
         </li>
 
         <li class="sidebar__item">
-            <a href="preferential-cards.html" class="sidebar__link">Льготные транспортные карты</a>
+            <a href="tariffs.html" class="sidebar__link">
+                Тарифы
+            </a>
         </li>
 
         <li class="sidebar__item">
-            <h5 class=" sidebar__item-heading bold-text">Пополнение</h5>
-            <ul>
-                <li><a href="mobile-apps.html">В мобильном приложении</a></li>
-                <li><a href="payment-apps.html">Платежными приложениями</a></li>
-                <li><a href="terminal-network.html">В сети терминалов</a></li>
-            </ul>
+            <a href="balance.html" class="sidebar__link">
+                Баланс
+            </a>
         </li>
 
         <li class="sidebar__item">
-            <a href="tariffs.html" class="sidebar__link">Тарифы</a>
-        </li>
-
-
-        <li class="sidebar__item">
-            <a href="instruction.html" class="sidebar__link">Инструкции</a>
+            <a href="history.html" class="sidebar__link">
+                История
+            </a>
         </li>
 
         <li class="sidebar__item">
-            <a href="" class="sidebar__link">FAQ</a>
+            <a href="cabinet-instruction.html" class="sidebar__link">
+                Инструкция
+            </a>
         </li>
 
+        <li class="sidebar__item">
+            <a href="settings.html" class="sidebar__link">
+                Настройки
+            </a>
+        </li>
     </ul>
 </div>
-
 
       <div class="content__main">
 
         <div class="content__top">
-          <h2 class="content__title"> Платежными приложениями </h2>
+          <h2 class="content__title"> Настройки </h2>
         </div>
 
-        <div class="content__wrapper">
+        <div class="content__wrapper border__top">
 
-          <div class="content__photo">
-            <img src="img/payment-apps.jpg" alt="">
+          <div class="settings">
+
+            <div class="settings__column">
+              <div class="settings__top">
+                <h3 class="settings__title">
+                  Аккаунт
+                </h3>
+              </div>
+
+              <div class="settings__wrap">
+
+                <div class="settings__photo">
+
+                  <h5 class="settings__photo-text">Загрузить фото:</h5>
+
+                  <div class="settings__photo-remove">
+                    <div class="preview"
+                    style="background: url('img/user-default.jpg');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                          ">
+                      <img #uploadedImage id="uploadedImage" src="img/user.jpg">
+                    </div>
+                    <button onclick="removeImage()" class="remove-btn">Удалить</button>
+                  </div>
+
+                  <div class="settings__photo-upload">
+                    <input #uploadImage id="uploadImage" class="uploadImage" type="file" accept="image/gif,image/jpeg,image/jpg,image/png" style="visibility: hidden; opacity: 0;" onchange="uploadHandler()">
+                    <div class="settings__photo-img">
+                      <i class="fa fa-camera" aria-hidden="true"></i>
+                    </div>
+                    <button onclick="openUploader()">Загрузить</button>
+                  </div>
+
+                </div>
+
+                <div class="form-group">
+                  <label class="" for="inlineFormInputGroup">Ф.И.О. владельца карты</label>
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="inlineFormInputGroup">
+                    <div class="input-group-append">
+                      <div class="input-group-text bg-white"><i class="fa fa-user-o" aria-hidden="true"></i></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="date-start">Дата начала</label>
+
+                  <div class="input-group">
+                    <input data-toggle="datepicker" type="text" id="date-start" class="form-control docs-date">
+                    <div class="input-group-append">
+                    <span class="input-group-text bg-white">
+                      <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                    </span>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="form-group">
+                  <label class="" for="phone-field">Телефон</label>
+                  <div class="input-group">
+                    <input type="text" class="form-control phone-musk" id="phone-field" placeholder="+998">
+                  </div>
+                </div>
+
+                <button class="main-btn mt-3">Сохранить изменения</button>
+
+              </div>
+
+            </div>
+
+            <div class="settings__column">
+              <div class="settings__top">
+                <h3 class="settings__title">
+                  Безопасность
+                </h3>
+              </div>
+
+              <div class="settings__wrap">
+
+                <div class="form-group">
+                  <label for="password-field-2">Пароль</label>
+                  <div class="input__wrap">
+                    <input id="password-field-2" type="password" class="form-control" name="password" value="">
+                    <span toggle="#password-field-2" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="password-field-3">Пароль</label>
+                  <div class="input__wrap">
+                    <input id="password-field-3" type="password" class="form-control" name="password" value="">
+                    <span toggle="#password-field-3" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                  </div>
+                </div>
+
+                <button class="secondary-btn mt-3">Сохранить изменения</button>
+
+              </div>
+
+            </div>
+
+
+
           </div>
-
-          <div class="content__text">
-
-            <b>Пополнение единой транспортной карты возможно через следующие мобильные приложения:</b>
-
-           <div class="payment__apps">
-             <div class="payment__apps-item">
-               <img src="img/svg/uzcard.svg" alt="">
-             </div>
-
-             <div class="payment__apps-item">
-               <img src="img/svg/uzcard.svg" alt="">
-             </div>
-
-             <div class="payment__apps-item">
-               <img src="img/svg/uzcard.svg" alt="">
-             </div>
-
-             <div class="payment__apps-item">
-               <img src="img/svg/uzcard.svg" alt="">
-             </div>
-
-             <div class="payment__apps-item">
-               <img src="img/svg/uzcard.svg" alt="">
-             </div>
-
-             <div class="payment__apps-item">
-               <img src="img/svg/uzcard.svg" alt="">
-             </div>
-
-             <div class="payment__apps-item">
-               <img src="img/svg/uzcard.svg" alt="">
-             </div>
-
-
-             <div class="payment__apps-item">
-               <img src="img/svg/uzcard.svg" alt="">
-             </div>
-
-           </div>
-
-          </div>
-
 
         </div>
+
+
 
       </div>
     </div>
@@ -745,5 +814,18 @@
 <script src="js/main.js"></script>
 
 
+<script src="libs/datepicker/datepicker.min.js"></script>
+
+<script>
+  try {
+    $(function() {
+      $('[data-toggle="datepicker"]').datepicker({
+        format: 'dd-mm-yyyy'
+      });
+    });
+  } catch (e) {
+
+  }
+</script>
 
 </html>

@@ -5,7 +5,7 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Index</title>
+  <title>History</title>
 
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="libs/aos/aos.css">
@@ -18,6 +18,7 @@
 
 
 
+  <link rel="stylesheet" type="text/css" href="libs/datepicker/datepicker.min.css">
 
 </head>
 <body>
@@ -468,102 +469,308 @@
 </div>
 
 
-<main class="main">
+<main class="main cabinet">
 
   <div class="my-container">
     <div class="content__holder">
       <div class="sidebar">
     <ul class="sidebar__wrapper">
-        <li class="sidebar__item">
-            <a href="transport-cards.html" class="sidebar__link active">Транспортные карты</a>
+        <li class="sidebar__item active">
+            <a href="routes.html" class="sidebar__link ">
+                Маршрут
+            </a>
         </li>
 
         <li class="sidebar__item">
-            <a href="preferential-cards.html" class="sidebar__link">Льготные транспортные карты</a>
+            <a href="tariffs.html" class="sidebar__link">
+                Тарифы
+            </a>
         </li>
 
         <li class="sidebar__item">
-            <h5 class=" sidebar__item-heading bold-text">Пополнение</h5>
-            <ul>
-                <li><a href="mobile-apps.html">В мобильном приложении</a></li>
-                <li><a href="payment-apps.html">Платежными приложениями</a></li>
-                <li><a href="terminal-network.html">В сети терминалов</a></li>
-            </ul>
+            <a href="balance.html" class="sidebar__link">
+                Баланс
+            </a>
         </li>
 
         <li class="sidebar__item">
-            <a href="tariffs.html" class="sidebar__link">Тарифы</a>
-        </li>
-
-
-        <li class="sidebar__item">
-            <a href="instruction.html" class="sidebar__link">Инструкции</a>
+            <a href="history.html" class="sidebar__link">
+                История
+            </a>
         </li>
 
         <li class="sidebar__item">
-            <a href="" class="sidebar__link">FAQ</a>
+            <a href="cabinet-instruction.html" class="sidebar__link">
+                Инструкция
+            </a>
         </li>
 
+        <li class="sidebar__item">
+            <a href="settings.html" class="sidebar__link">
+                Настройки
+            </a>
+        </li>
     </ul>
 </div>
-
 
       <div class="content__main">
 
         <div class="content__top">
-          <h2 class="content__title"> Платежными приложениями </h2>
+          <h2 class="content__title"> История </h2>
         </div>
 
-        <div class="content__wrapper">
 
-          <div class="content__photo">
-            <img src="img/payment-apps.jpg" alt="">
+        <div class="history__top">
+          <div class="history__top-wrap">
+            <div class="history__top-item">
+              <div class="form-group">
+                <label for="history-type">Тип истории</label>
+                <select class="custom-select" id="history-type">
+                  <option selected>Поездки</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </div>
+            <div class="history__top-item">
+              <div class="form-group">
+                <label for="date-start">Дата начала</label>
+
+                <div class="input-group">
+                  <input data-toggle="datepicker" type="text" id="date-start" class="form-control docs-date">
+                  <div class="input-group-append">
+                    <span class="input-group-text">
+                      <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="history__top-item">
+              <div class="form-group">
+                <label for="date-expiration">Дата окончания</label>
+
+                <div class="input-group">
+                  <input data-toggle="datepicker" type="text" id="date-expiration" class="form-control docs-date">
+                  <div class="input-group-append">
+                    <span class="input-group-text">
+                      <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
           </div>
 
-          <div class="content__text">
+          <button class="third-btn">Показать результаты</button>
+        </div>
 
-            <b>Пополнение единой транспортной карты возможно через следующие мобильные приложения:</b>
-
-           <div class="payment__apps">
-             <div class="payment__apps-item">
-               <img src="img/svg/uzcard.svg" alt="">
-             </div>
-
-             <div class="payment__apps-item">
-               <img src="img/svg/uzcard.svg" alt="">
-             </div>
-
-             <div class="payment__apps-item">
-               <img src="img/svg/uzcard.svg" alt="">
-             </div>
-
-             <div class="payment__apps-item">
-               <img src="img/svg/uzcard.svg" alt="">
-             </div>
-
-             <div class="payment__apps-item">
-               <img src="img/svg/uzcard.svg" alt="">
-             </div>
-
-             <div class="payment__apps-item">
-               <img src="img/svg/uzcard.svg" alt="">
-             </div>
-
-             <div class="payment__apps-item">
-               <img src="img/svg/uzcard.svg" alt="">
-             </div>
+        <br><br>
+        <div class="content__top">
+          <h2 class="content__title"> Результаты поиска </h2>
+        </div>
 
 
-             <div class="payment__apps-item">
-               <img src="img/svg/uzcard.svg" alt="">
-             </div>
+        <div class="content__wrapper history__block">
 
-           </div>
+          <div class="history__wrap">
+
+            <div class="history__item">
+              <div class="history__item-inner">
+                <div class="history__item-left">
+                  <div class="history__item-icon">
+                    <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                  </div>
+
+                  <div class="history__item-content">
+                    <h4 class="history__item-title">Ул. Абдулла Кодирий, 78</h4>
+                    <h6 class="history__item-subtitle">01/02/2021 (2 поездки)</h6>
+                  </div>
+                </div>
+                <div class="history__item-right">
+                  <i class="fa fa-clock-o" aria-hidden="true"></i> 48 мин.
+                </div>
+              </div>
+
+            </div>
+
+            <div class="history__item">
+              <div class="history__item-inner">
+                <div class="history__item-left">
+                  <div class="history__item-icon">
+                    <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                  </div>
+
+                  <div class="history__item-content">
+                    <h4 class="history__item-title">Ул. Абдулла Кодирий, 78</h4>
+                    <h6 class="history__item-subtitle">01/02/2021 (2 поездки)</h6>
+                  </div>
+                </div>
+                <div class="history__item-right">
+                  <i class="fa fa-clock-o" aria-hidden="true"></i> 48 мин.
+                </div>
+              </div>
+
+            </div>
+
+            <div class="history__item">
+              <div class="history__item-inner">
+                <div class="history__item-left">
+                  <div class="history__item-icon">
+                    <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                  </div>
+
+                  <div class="history__item-content">
+                    <h4 class="history__item-title">Ул. Абдулла Кодирий, 78</h4>
+                    <h6 class="history__item-subtitle">01/02/2021 (2 поездки)</h6>
+                  </div>
+                </div>
+                <div class="history__item-right">
+                  <i class="fa fa-clock-o" aria-hidden="true"></i> 48 мин.
+                </div>
+              </div>
+
+            </div>
+
+            <div class="history__item">
+              <div class="history__item-inner">
+                <div class="history__item-left">
+                  <div class="history__item-icon">
+                    <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                  </div>
+
+                  <div class="history__item-content">
+                    <h4 class="history__item-title">Ул. Абдулла Кодирий, 78</h4>
+                    <h6 class="history__item-subtitle">01/02/2021 (2 поездки)</h6>
+                  </div>
+                </div>
+                <div class="history__item-right">
+                  <i class="fa fa-clock-o" aria-hidden="true"></i> 48 мин.
+                </div>
+              </div>
+
+            </div>
+
+            <div class="history__item">
+              <div class="history__item-inner">
+                <div class="history__item-left">
+                  <div class="history__item-icon">
+                    <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                  </div>
+
+                  <div class="history__item-content">
+                    <h4 class="history__item-title">Ул. Абдулла Кодирий, 78</h4>
+                    <h6 class="history__item-subtitle">01/02/2021 (2 поездки)</h6>
+                  </div>
+                </div>
+                <div class="history__item-right">
+                  <i class="fa fa-clock-o" aria-hidden="true"></i> 48 мин.
+                </div>
+              </div>
+
+            </div>
+
+            <div class="history__item">
+              <div class="history__item-inner">
+                <div class="history__item-left">
+                  <div class="history__item-icon">
+                    <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                  </div>
+
+                  <div class="history__item-content">
+                    <h4 class="history__item-title">Ул. Абдулла Кодирий, 78</h4>
+                    <h6 class="history__item-subtitle">01/02/2021 (2 поездки)</h6>
+                  </div>
+                </div>
+                <div class="history__item-right">
+                  <i class="fa fa-clock-o" aria-hidden="true"></i> 48 мин.
+                </div>
+              </div>
+
+            </div>
+
+            <div class="history__item">
+              <div class="history__item-inner">
+                <div class="history__item-left">
+                  <div class="history__item-icon">
+                    <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                  </div>
+
+                  <div class="history__item-content">
+                    <h4 class="history__item-title">Ул. Абдулла Кодирий, 78</h4>
+                    <h6 class="history__item-subtitle">01/02/2021 (2 поездки)</h6>
+                  </div>
+                </div>
+                <div class="history__item-right">
+                  <i class="fa fa-clock-o" aria-hidden="true"></i> 48 мин.
+                </div>
+              </div>
+
+            </div>
+
+            <div class="history__item">
+              <div class="history__item-inner">
+                <div class="history__item-left">
+                  <div class="history__item-icon">
+                    <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                  </div>
+
+                  <div class="history__item-content">
+                    <h4 class="history__item-title">Ул. Абдулла Кодирий, 78</h4>
+                    <h6 class="history__item-subtitle">01/02/2021 (2 поездки)</h6>
+                  </div>
+                </div>
+                <div class="history__item-right">
+                  <i class="fa fa-clock-o" aria-hidden="true"></i> 48 мин.
+                </div>
+              </div>
+
+            </div>
 
           </div>
 
+          <ul class="pagination">
+            <li class="pagination__item pagination__prev disabled">
+              <a href="#!" class="pagination__link">«Предыдущая</a>
+            </li>
+
+            <li class="pagination__item">
+              <a href="#!" class="pagination__link">1</a>
+            </li>
+
+            <li class="pagination__item">
+              <a href="#!" class="pagination__link">2</a>
+            </li>
+
+            <li class="pagination__item">
+              <a href="#!" class="pagination__link">3</a>
+            </li>
+
+            <li class="pagination__item">
+              <a href="#!" class="pagination__link">4</a>
+            </li>
+
+            <li class="pagination__item disabled">
+              <a href="#!" class="pagination__link">...</a>
+            </li>
+
+            <li class="pagination__item">
+              <a href="#!" class="pagination__link">20</a>
+            </li>
+
+            <li class="pagination__item pagination__next">
+              <a href="#!" class="pagination__link">Следующая »</a>
+            </li>
+
+          </ul>
 
         </div>
+
+
 
       </div>
     </div>
@@ -745,5 +952,18 @@
 <script src="js/main.js"></script>
 
 
+<script src="libs/datepicker/datepicker.min.js"></script>
+
+<script>
+  try {
+    $(function() {
+      $('[data-toggle="datepicker"]').datepicker({
+        format: 'dd-mm-yyyy'
+      });
+    });
+  } catch (e) {
+
+  }
+</script>
 
 </html>
