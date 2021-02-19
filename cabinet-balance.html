@@ -5,7 +5,7 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>History</title>
+  <title>Balance</title>
 
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="libs/aos/aos.css">
@@ -468,8 +468,6 @@
 </div>
 
 
-
-
 <main class="main cabinet">
 
   <div class="my-container">
@@ -515,809 +513,454 @@
 </div>
 
       <div class="content__main">
-
         <div class="content__top">
-          <h2 class="content__title"> Тарифы </h2>
-
-            <a href="#buyTariff" class="third-btn">Купить тариф</a>
+          <h2 class="content__title"> Баланс </h2>
+          <a href="#!" class="third-btn"
+             data-target="#topUpBalance"
+             data-toggle="modal"
+          >Пополнить баланс</a>
         </div>
 
         <div class="content__wrapper border__top">
+            <div class="balance">
+                <div class="balance__top">
+                    <div class="balance__top-left">
+                        <h6 class="small-text mb-2">Карта</h6>
+                        <h5 class="block__title">Транспортная карта</h5>
+                    </div>
 
-          <div class="tariffs__cabinet">
+                    <div class="balance__top-right">
+                        <button class="secondary-btn"
+                                data-target="#addCard"
+                                data-toggle="modal"
 
-              <div class="tariffs__current">
+                        >Добавить карту</button>
+                    </div>
 
-                  <div class="tariffs__current-top">
-                      <h6 class="tariffs__current-subtitle">Текущий тариф</h6>
-                      <h4 class="tariffs__current-title">AV - Автобус для населения</h4>
-                  </div>
+                </div>
 
-                  <div class="tariffs__current-wrap">
+                <div class="slider__block">
+                    <div class="swiper-container card__slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide card__slider-item active">
+                                <div class="card__slider-wrap"
+                                     style="
+                                    background: url('img/svg/card.svg');
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    background-position: right center;
+                                        "
+                                >
+                                    <div class="card__slider-header">
+                                        <div class="card__slider-logo">
+                                            <img src="img/svg/logo-white.svg" alt="">
+                                        </div>
+                                        <div class="warning__block">
+                                            <img src="img/svg/message.svg" alt="">
+                                            <span>Услуга «SMS Info» не подключена</span>
+                                        </div>
+                                        <div class="btn-group card__slider-dropdown">
+                                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Separated link</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__slider-body"
 
-                      <div class="tariffs__current-item active"
-                        style="background: url('img/card-pattern.png');
-                               background-position: left top;
-                               background-repeat: no-repeat;
-                            "
-                      >
+                                    >
+                                        <h3 class="card__slider-sum">180 000.0 UZS</h3>
+                                        <h4 class="card__slider-card-number">9987 1000 5466 9748</h4>
+                                        <h5 class="card__slider-danger-text">Недостаточно средств </h5>
 
-                          <div class="tariffs__current-status">
-                              <h6>
-                                  Активен
-                                  <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
-                              </h6>
-                          </div>
-                          <div class="tariffs__current-body">
-                              <div class="tariffs__current-left">
-                                  <h5>5 <span>дней</span></h5>
-                                  <h4>AVM</h4>
-                              </div>
-                              <div class="tariffs__current-right">
-                                  <div class="tariffs__current-list">
-                                      <h5>Цена</h5>
+                                        <div class="card__slider-text">
+                                            <h6 class="small-text">Название карты</h6>
+                                            <h5 class="card__slider-name">Karta Transportnaya</h5>
+                                        </div>
 
-                                      <b>20 380 <span>UZS</span></b>
-                                  </div>
+                                    </div>
+                                </div>
 
-                                  <div class="tariffs__current-list">
-                                      <h5>Куплен на карту</h5>
-                                      <b>Karta Transportnaya <span>**9748</span></b>
-                                  </div>
-                              </div>
-                          </div>
+                                <div class="card__slider-footer">
+                                    <h5><b>AVM</b> Активен до: 01.03.21 <i class="fa fa-info-circle" aria-hidden="true"></i></h5>
+                                </div>
+                            </div>
 
-                          <div class="tariffs__current-bottom">
-                              <h5><b>AVM</b> Осталось 3 дня <i class="fa fa-exclamation-circle" aria-hidden="true"></i> </h5>
-                          </div>
-                      </div>
+                            <div class="swiper-slide card__slider-item">
+                                <div class="card__slider-wrap"
+                                     style="
+                                    background: url('img/svg/card.svg');
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    background-position: right center;
+                                        "
+                                >
+                                    <div class="card__slider-header">
+                                        <div class="card__slider-logo">
+                                            <img src="img/svg/logo-white.svg" alt="">
+                                        </div>
+                                        <div class="warning__block">
+                                            <img src="img/svg/message.svg" alt="">
+                                            <span>Услуга «SMS Info» не подключена</span>
+                                        </div>
+                                        <div class="btn-group card__slider-dropdown">
+                                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Separated link</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__slider-body"
 
-                      <div class="tariffs__current-item"
-                           style="background: url('img/card-pattern.png');
-                               background-position: left top;
-                               background-repeat: no-repeat;
-                            "
-                      >
+                                    >
+                                        <h3 class="card__slider-sum">180 000.0 UZS</h3>
+                                        <h4 class="card__slider-card-number">9987 1000 5466 9748</h4>
+                                        <h5 class="card__slider-danger-text">Недостаточно средств </h5>
 
-                          <div class="tariffs__current-status">
-                              <h6>
-                                  Активен
-                                  <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
-                              </h6>
-                          </div>
-                          <div class="tariffs__current-body">
-                              <div class="tariffs__current-left">
-                                  <h5>5 <span>дней</span></h5>
-                                  <h4>AVM</h4>
-                              </div>
-                              <div class="tariffs__current-right">
-                                  <div class="tariffs__current-list">
-                                      <h5>Цена</h5>
+                                        <div class="card__slider-text">
+                                            <h6 class="small-text">Название карты</h6>
+                                            <h5 class="card__slider-name">Karta Transportnaya</h5>
+                                        </div>
 
-                                      <b>20 380 <span>UZS</span></b>
-                                  </div>
+                                    </div>
+                                </div>
 
-                                  <div class="tariffs__current-list">
-                                      <h5>Куплен на карту</h5>
-                                      <b>Karta Transportnaya <span>**9748</span></b>
-                                  </div>
-                              </div>
-                          </div>
+                                <div class="card__slider-footer">
+                                    <h5><b>AVM</b> Не активен <i class="fa fa-info-circle" aria-hidden="true"></i></h5>
+                                </div>
+                            </div>
 
-                          <div class="tariffs__current-bottom">
-                              <h5><b>AVM</b> Осталось 3 дня <i class="fa fa-exclamation-circle" aria-hidden="true"></i> </h5>
-                          </div>
-                      </div>
+                            <div class="swiper-slide card__slider-item">
+                                <div class="card__slider-wrap"
+                                     style="
+                                    background: url('img/svg/card.svg');
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    background-position: right center;
+                                        "
+                                >
+                                    <div class="card__slider-header">
+                                        <div class="card__slider-logo">
+                                            <img src="img/svg/logo-white.svg" alt="">
+                                        </div>
+                                        <div class="warning__block">
+                                            <img src="img/svg/message.svg" alt="">
+                                            <span>Услуга «SMS Info» не подключена</span>
+                                        </div>
+                                        <div class="btn-group card__slider-dropdown">
+                                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Separated link</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__slider-body"
 
-                      <div class="tariffs__current-item active"
-                           style="background: url('img/card-pattern.png');
-                               background-position: left top;
-                               background-repeat: no-repeat;
-                            "
-                      >
+                                    >
+                                        <h3 class="card__slider-sum">180 000.0 UZS</h3>
+                                        <h4 class="card__slider-card-number">9987 1000 5466 9748</h4>
+                                        <h5 class="card__slider-danger-text">Недостаточно средств </h5>
 
-                          <div class="tariffs__current-status">
-                              <h6>
-                                  Активен
-                                  <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
-                              </h6>
-                          </div>
-                          <div class="tariffs__current-body">
-                              <div class="tariffs__current-left">
-                                  <h5>5 <span>дней</span></h5>
-                                  <h4>AVM</h4>
-                              </div>
-                              <div class="tariffs__current-right">
-                                  <div class="tariffs__current-list">
-                                      <h5>Цена</h5>
+                                        <div class="card__slider-text">
+                                            <h6 class="small-text">Название карты</h6>
+                                            <h5 class="card__slider-name">Karta Transportnaya</h5>
+                                        </div>
 
-                                      <b>20 380 <span>UZS</span></b>
-                                  </div>
+                                    </div>
+                                </div>
 
-                                  <div class="tariffs__current-list">
-                                      <h5>Куплен на карту</h5>
-                                      <b>Karta Transportnaya <span>**9748</span></b>
-                                  </div>
-                              </div>
-                          </div>
+                                <div class="card__slider-footer">
+                                    <h5><b>AVM</b> Не активен <i class="fa fa-info-circle" aria-hidden="true"></i></h5>
+                                </div>
+                            </div>
 
-                          <div class="tariffs__current-bottom">
-                              <h5><b>AVM</b> Осталось 3 дня <i class="fa fa-exclamation-circle" aria-hidden="true"></i> </h5>
-                          </div>
-                      </div>
+                            <div class="swiper-slide card__slider-item">
+                                <div class="card__slider-wrap"
+                                     style="
+                                    background: url('img/svg/card.svg');
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    background-position: right center;
+                                        "
+                                >
+                                    <div class="card__slider-header">
+                                        <div class="card__slider-logo">
+                                            <img src="img/svg/logo-white.svg" alt="">
+                                        </div>
+                                        <div class="warning__block">
+                                            <img src="img/svg/message.svg" alt="">
+                                            <span>Услуга «SMS Info» не подключена</span>
+                                        </div>
+                                        <div class="btn-group card__slider-dropdown">
+                                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Separated link</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__slider-body"
 
-                      <div class="tariffs__current-item"
-                           style="background: url('img/card-pattern.png');
-                               background-position: left top;
-                               background-repeat: no-repeat;
-                            "
-                      >
+                                    >
+                                        <h3 class="card__slider-sum">180 000.0 UZS</h3>
+                                        <h4 class="card__slider-card-number">9987 1000 5466 9748</h4>
+                                        <h5 class="card__slider-danger-text">Недостаточно средств </h5>
 
-                          <div class="tariffs__current-status">
-                              <h6>
-                                  Активен
-                                  <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
-                              </h6>
-                          </div>
-                          <div class="tariffs__current-body">
-                              <div class="tariffs__current-left">
-                                  <h5>5 <span>дней</span></h5>
-                                  <h4>AVM</h4>
-                              </div>
-                              <div class="tariffs__current-right">
-                                  <div class="tariffs__current-list">
-                                      <h5>Цена</h5>
+                                        <div class="card__slider-text">
+                                            <h6 class="small-text">Название карты</h6>
+                                            <h5 class="card__slider-name">Karta Transportnaya</h5>
+                                        </div>
 
-                                      <b>20 380 <span>UZS</span></b>
-                                  </div>
+                                    </div>
+                                </div>
 
-                                  <div class="tariffs__current-list">
-                                      <h5>Куплен на карту</h5>
-                                      <b>Karta Transportnaya <span>**9748</span></b>
-                                  </div>
-                              </div>
-                          </div>
+                                <div class="card__slider-footer">
+                                    <h5><b>AVM</b> Не активен <i class="fa fa-info-circle" aria-hidden="true"></i></h5>
+                                </div>
+                            </div>
 
-                          <div class="tariffs__current-bottom">
-                              <h5><b>AVM</b> Осталось 3 дня <i class="fa fa-exclamation-circle" aria-hidden="true"></i> </h5>
-                          </div>
-                      </div>
+                            <div class="swiper-slide card__slider-item">
+                                <div class="card__slider-wrap"
+                                     style="
+                                    background: url('img/svg/card.svg');
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    background-position: right center;
+                                        "
+                                >
+                                    <div class="card__slider-header">
+                                        <div class="card__slider-logo">
+                                            <img src="img/svg/logo-white.svg" alt="">
+                                        </div>
+                                        <div class="warning__block">
+                                            <img src="img/svg/message.svg" alt="">
+                                            <span>Услуга «SMS Info» не подключена</span>
+                                        </div>
+                                        <div class="btn-group card__slider-dropdown">
+                                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Separated link</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__slider-body"
 
-                  </div>
+                                    >
+                                        <h3 class="card__slider-sum">180 000.0 UZS</h3>
+                                        <h4 class="card__slider-card-number">9987 1000 5466 9748</h4>
+                                        <h5 class="card__slider-danger-text">Недостаточно средств </h5>
 
-              </div>
+                                        <div class="card__slider-text">
+                                            <h6 class="small-text">Название карты</h6>
+                                            <h5 class="card__slider-name">Karta Transportnaya</h5>
+                                        </div>
 
-              <hr>
+                                    </div>
+                                </div>
 
-            <div class="tariffs__cabinet-row" id="buyTariff">
-                <div class="tariffs__cabinet-column">
-                    <h4 class="tariffs__cabinet-title">
-                        Тарифные планы
-                    </h4>
-
-                    <div class="tariffs__cabinet-wrapper">
-                        <div class="form-group">
-                            <label for="history-type">Выберите тарифный план из списка</label>
-                            <select class="custom-select" id="history-type">
-                                <option selected>Автобус для населения</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
+                                <div class="card__slider-footer">
+                                    <h5><b>AVM</b> Не активен <i class="fa fa-info-circle" aria-hidden="true"></i></h5>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="tariffs__cabinet-column">
-                    <h4 class="tariffs__cabinet-title">
-                        Автобус для населения
-                    </h4>
 
-                    <div class="tariffs__cabinet-wrapper">
-                        <h5 class="tariffs__cabinet-small-text">Выберите удобный Вам тарифный план</h5>
+                <div class="balance__history">
+                    <div class="content__top">
+                        <h2 class="content__title"> История </h2>
+                        <a href="#!" class="main-color content__top-link">Еще</a>
+                    </div>
 
-                       <div class="tariffs__cabinet-holder">
-                           <a href="#!" class="tariffs__cabinet-item"
-                              data-target="#tariffs-modal"
-                              data-toggle="modal"
-                                style="background: url('img/card-pattern-right.png');
-                               background-position: left bottom;
-                               background-repeat: no-repeat;
-                               background-size: cover;
-                            "
-                           >
-                               <div class="tariffs__cabinet-body">
-                                   <div class="tariffs__cabinet-left">
-                                       <h5>5 <span>дней</span></h5>
-                                   </div>
+                    <div class="content__wrapper border-top">
 
-                                   <div class="tariffs__cabinet-right">
-                                       <div class="tariffs__cabinet-list">
-                                           <h6>Цена</h6>
+                        <div class="history__list">
 
-                                           <b>20 380 <span>UZS</span></b>
-                                       </div>
-                                   </div>
-                               </div>
-                           </a>
-                       </div>
+                            <div class="history__list-column">
+                                <div class="history__list-item">
+                                    <div class="history__list-icon">
+                                        <img src="img/svg/cardplus.svg" alt="">
+                                    </div>
+
+                                    <div class="history__list-wrap">
+                                        <div class="history__list-content">
+                                            <h3>Баланс пополнен</h3>
+                                            <h5>01/02/2021 (10 поездок)</h5>
+                                        </div>
+
+                                        <h4 class="history__list-sum fill">
+                                            +15 000 UZS
+                                        </h4>
+                                    </div>
+                                </div>
+
+                                <div class="history__list-item">
+                                    <div class="history__list-icon">
+                                        <img src="img/svg/cardplus.svg" alt="">
+                                    </div>
+
+                                    <div class="history__list-wrap">
+                                        <div class="history__list-content">
+                                            <h3>Баланс пополнен</h3>
+                                            <h5>01/02/2021 (10 поездок)</h5>
+                                        </div>
+
+                                        <h4 class="history__list-sum fill">
+                                            +15 000 UZS
+                                        </h4>
+                                    </div>
+                                </div>
+
+                                <div class="history__list-item">
+                                    <div class="history__list-icon">
+                                        <img src="img/svg/cardplus.svg" alt="">
+                                    </div>
+
+                                    <div class="history__list-wrap">
+                                        <div class="history__list-content">
+                                            <h3>Баланс пополнен</h3>
+                                            <h5>01/02/2021 (10 поездок)</h5>
+                                        </div>
+
+                                        <h4 class="history__list-sum fill">
+                                            +15 000 UZS
+                                        </h4>
+                                    </div>
+                                </div>
+
+                                <div class="history__list-item">
+                                    <div class="history__list-icon">
+                                        <img src="img/svg/cardplus.svg" alt="">
+                                    </div>
+
+                                    <div class="history__list-wrap">
+                                        <div class="history__list-content">
+                                            <h3>Баланс пополнен</h3>
+                                            <h5>01/02/2021 (10 поездок)</h5>
+                                        </div>
+
+                                        <h4 class="history__list-sum fill">
+                                            +15 000 UZS
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="history__list-column">
+
+                                <div class="history__list-item">
+                                    <div class="history__list-icon">
+                                        <img src="img/svg/cardplus.svg" alt="">
+                                    </div>
+
+                                    <div class="history__list-wrap">
+                                        <div class="history__list-content">
+                                            <h3>Баланс пополнен</h3>
+                                            <h5>01/02/2021 (10 поездок)</h5>
+                                        </div>
+
+                                        <h4 class="history__list-sum expense">
+                                            +15 000 UZS
+                                        </h4>
+                                    </div>
+                                </div>
+
+                                <div class="history__list-item">
+                                    <div class="history__list-icon">
+                                        <img src="img/svg/cardplus.svg" alt="">
+                                    </div>
+
+                                    <div class="history__list-wrap">
+                                        <div class="history__list-content">
+                                            <h3>Баланс пополнен</h3>
+                                            <h5>01/02/2021 (10 поездок)</h5>
+                                        </div>
+
+                                        <h4 class="history__list-sum expense">
+                                            +15 000 UZS
+                                        </h4>
+                                    </div>
+                                </div>
+
+                                <div class="history__list-item">
+                                    <div class="history__list-icon">
+                                        <img src="img/svg/cardplus.svg" alt="">
+                                    </div>
+
+                                    <div class="history__list-wrap">
+                                        <div class="history__list-content">
+                                            <h3>Баланс пополнен</h3>
+                                            <h5>01/02/2021 (10 поездок)</h5>
+                                        </div>
+
+                                        <h4 class="history__list-sum expense">
+                                            +15 000 UZS
+                                        </h4>
+                                    </div>
+                                </div>
+
+                                <div class="history__list-item">
+                                    <div class="history__list-icon">
+                                        <img src="img/svg/cardplus.svg" alt="">
+                                    </div>
+
+                                    <div class="history__list-wrap">
+                                        <div class="history__list-content">
+                                            <h3>Баланс пополнен</h3>
+                                            <h5>01/02/2021 (10 поездок)</h5>
+                                        </div>
+
+                                        <h4 class="history__list-sum expense">
+                                            +15 000 UZS
+                                        </h4>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
 
                     </div>
                 </div>
             </div>
 
-          </div>
+
         </div>
-
-          <div class="content__top">
-              <h2 class="content__title"> История </h2>
-          </div>
-
-          <div class="content__wrapper border__top">
-
-              <div class="tariffs__slider-main">
-                  <div class="swiper-container tariffs__slider">
-                      <div class="swiper-wrapper">
-                          <div class="tariffs__current-item swiper-slide"
-                               style="background: url('img/card-pattern.png');
-                           background-position: left top;
-                           background-repeat: no-repeat;
-                        "
-                          >
-                              <div class="tariffs__current-body">
-                                  <div class="tariffs__current-left">
-                                      <h5>5 <span>дней</span></h5>
-                                      <h4>AVM</h4>
-                                  </div>
-                                  <div class="tariffs__current-right">
-                                      <div class="tariffs__current-list">
-                                          <h5>Цена</h5>
-
-                                          <b>20 380 <span>UZS</span></b>
-                                      </div>
-
-                                      <div class="tariffs__current-list">
-                                          <h5>Куплен на карту</h5>
-                                          <b>Karta Transportnaya <span>**9748</span></b>
-                                      </div>
-
-                                      <div class="tariffs__current-list">
-                                          <h5>Дата покупки</h5>
-                                          <b>21.01.2021 - 15:50</b>
-                                      </div>
-
-                                      <div class="tariffs__current-list">
-                                          <h5>Дата использования</h5>
-                                          <b>25.01.2021 - 30.01.2020</b>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="tariffs__current-bottom">
-                                  <h5>Не использован</h5>
-                              </div>
-                          </div>
-                          <div class="tariffs__current-item swiper-slide"
-                               style="background: url('img/card-pattern.png');
-                           background-position: left top;
-                           background-repeat: no-repeat;
-                        "
-                          >
-                              <div class="tariffs__current-body">
-                                  <div class="tariffs__current-left">
-                                      <h5>5 <span>дней</span></h5>
-                                      <h4>AVM</h4>
-                                  </div>
-                                  <div class="tariffs__current-right">
-                                      <div class="tariffs__current-list">
-                                          <h5>Цена</h5>
-
-                                          <b>20 380 <span>UZS</span></b>
-                                      </div>
-
-                                      <div class="tariffs__current-list">
-                                          <h5>Куплен на карту</h5>
-                                          <b>Karta Transportnaya <span>**9748</span></b>
-                                      </div>
-
-                                      <div class="tariffs__current-list">
-                                          <h5>Дата покупки</h5>
-                                          <b>21.01.2021 - 15:50</b>
-                                      </div>
-
-                                      <div class="tariffs__current-list">
-                                          <h5>Дата использования</h5>
-                                          <b>25.01.2021 - 30.01.2020</b>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="tariffs__current-bottom">
-                                  <h5>Не использован</h5>
-                              </div>
-                          </div>
-                          <div class="tariffs__current-item swiper-slide"
-                               style="background: url('img/card-pattern.png');
-                           background-position: left top;
-                           background-repeat: no-repeat;
-                        "
-                          >
-                              <div class="tariffs__current-body">
-                                  <div class="tariffs__current-left">
-                                      <h5>5 <span>дней</span></h5>
-                                      <h4>AVM</h4>
-                                  </div>
-                                  <div class="tariffs__current-right">
-                                      <div class="tariffs__current-list">
-                                          <h5>Цена</h5>
-
-                                          <b>20 380 <span>UZS</span></b>
-                                      </div>
-
-                                      <div class="tariffs__current-list">
-                                          <h5>Куплен на карту</h5>
-                                          <b>Karta Transportnaya <span>**9748</span></b>
-                                      </div>
-
-                                      <div class="tariffs__current-list">
-                                          <h5>Дата покупки</h5>
-                                          <b>21.01.2021 - 15:50</b>
-                                      </div>
-
-                                      <div class="tariffs__current-list">
-                                          <h5>Дата использования</h5>
-                                          <b>25.01.2021 - 30.01.2020</b>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="tariffs__current-bottom">
-                                  <h5>Не использован</h5>
-                              </div>
-                          </div>
-                          <div class="tariffs__current-item swiper-slide"
-                               style="background: url('img/card-pattern.png');
-                           background-position: left top;
-                           background-repeat: no-repeat;
-                        "
-                          >
-                              <div class="tariffs__current-body">
-                                  <div class="tariffs__current-left">
-                                      <h5>5 <span>дней</span></h5>
-                                      <h4>AVM</h4>
-                                  </div>
-                                  <div class="tariffs__current-right">
-                                      <div class="tariffs__current-list">
-                                          <h5>Цена</h5>
-
-                                          <b>20 380 <span>UZS</span></b>
-                                      </div>
-
-                                      <div class="tariffs__current-list">
-                                          <h5>Куплен на карту</h5>
-                                          <b>Karta Transportnaya <span>**9748</span></b>
-                                      </div>
-
-                                      <div class="tariffs__current-list">
-                                          <h5>Дата покупки</h5>
-                                          <b>21.01.2021 - 15:50</b>
-                                      </div>
-
-                                      <div class="tariffs__current-list">
-                                          <h5>Дата использования</h5>
-                                          <b>25.01.2021 - 30.01.2020</b>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="tariffs__current-bottom">
-                                  <h5>Не использован</h5>
-                              </div>
-                          </div>
-                          <div class="tariffs__current-item swiper-slide"
-                               style="background: url('img/card-pattern.png');
-                           background-position: left top;
-                           background-repeat: no-repeat;
-                        "
-                          >
-                              <div class="tariffs__current-body">
-                                  <div class="tariffs__current-left">
-                                      <h5>5 <span>дней</span></h5>
-                                      <h4>AVM</h4>
-                                  </div>
-                                  <div class="tariffs__current-right">
-                                      <div class="tariffs__current-list">
-                                          <h5>Цена</h5>
-
-                                          <b>20 380 <span>UZS</span></b>
-                                      </div>
-
-                                      <div class="tariffs__current-list">
-                                          <h5>Куплен на карту</h5>
-                                          <b>Karta Transportnaya <span>**9748</span></b>
-                                      </div>
-
-                                      <div class="tariffs__current-list">
-                                          <h5>Дата покупки</h5>
-                                          <b>21.01.2021 - 15:50</b>
-                                      </div>
-
-                                      <div class="tariffs__current-list">
-                                          <h5>Дата использования</h5>
-                                          <b>25.01.2021 - 30.01.2020</b>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="tariffs__current-bottom">
-                                  <h5>Не использован</h5>
-                              </div>
-                          </div>
-                          <div class="tariffs__current-item swiper-slide"
-                               style="background: url('img/card-pattern.png');
-                           background-position: left top;
-                           background-repeat: no-repeat;
-                        "
-                          >
-                              <div class="tariffs__current-body">
-                                  <div class="tariffs__current-left">
-                                      <h5>5 <span>дней</span></h5>
-                                      <h4>AVM</h4>
-                                  </div>
-                                  <div class="tariffs__current-right">
-                                      <div class="tariffs__current-list">
-                                          <h5>Цена</h5>
-
-                                          <b>20 380 <span>UZS</span></b>
-                                      </div>
-
-                                      <div class="tariffs__current-list">
-                                          <h5>Куплен на карту</h5>
-                                          <b>Karta Transportnaya <span>**9748</span></b>
-                                      </div>
-
-                                      <div class="tariffs__current-list">
-                                          <h5>Дата покупки</h5>
-                                          <b>21.01.2021 - 15:50</b>
-                                      </div>
-
-                                      <div class="tariffs__current-list">
-                                          <h5>Дата использования</h5>
-                                          <b>25.01.2021 - 30.01.2020</b>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="tariffs__current-bottom">
-                                  <h5>Не использован</h5>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="swiper-button--prev"></div>
-                  <div class="swiper-button--next"></div>
-
-              </div>
-          </div>
 
       </div>
     </div>
   </div>
 
 </main>
-
-
-<div class="modal fade modal__main" id="tariffs-modal" tabindex="-1" role="dialog" aria-hidden="true">
-    <form action="" class="modal-dialog modal-dialog-centered">
-        <div class="modal-content modal__content modal__auth-content">
-            <div class="modal__body pt-0 pb-2">
-
-                <div class="tariffs__current-list">
-                    <h5>Выбранный тариф</h5>
-                    <b>АV - Автобус для населения </b>
-                </div>
-
-                <div class="tariffs__current-list">
-                    <h5>Срок действия</h5>
-                    <b>5 дней</b>
-                </div>
-
-                <div class="tariffs__current-list">
-                    <h5>Цена</h5>
-                    <b>20 328 UZS</b>
-                </div>
-
-                <div class="tariffs__current-list">
-                    <h5>Описание</h5>
-                    <p>Активация тарифного плана начинается с момента первой оплаты транспортной картой, на которую был приобретен тарифный план. Приобретенный тарифный план может быть активирован независимо от даты его приробретения в течении 90 дней.</p>
-                </div>
-
-                <hr>
-
-                <h6 class="modal__slider-title">Выбери карту, на которую  активируется план</h6>
-
-                <div class="modal__slider-main">
-
-                    <div class="swiper-container modal__slider">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide card__slider-item">
-                                <div class="card__slider-wrap"
-                                     style="
-                                    background: url('img/svg/card.svg');
-                                    background-repeat: no-repeat;
-                                    background-size: cover;
-                                    background-position: right center;
-                                        "
-                                >
-                                    <div class="card__slider-header">
-                                        <div class="card__slider-logo">
-                                            <img src="img/svg/logo-white.svg" alt="">
-                                        </div>
-                                        <div class="btn-group card__slider-dropdown">
-                                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                            </button>
-                                            <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="#">Action</a>
-                                                <a class="dropdown-item" href="#">Another action</a>
-                                                <a class="dropdown-item" href="#">Something else here</a>
-                                                <div class="dropdown-divider"></div>
-                                                <a class="dropdown-item" href="#">Separated link</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card__slider-body"
-
-                                    >
-                                        <h3 class="card__slider-sum">180 000.0 UZS</h3>
-                                        <h4 class="card__slider-card-number">9987 1000 5466 9748</h4>
-
-                                        <div class="card__slider-text">
-                                            <h6 class="small-text">Название карты</h6>
-                                            <h5 class="card__slider-name">Karta Transportnaya</h5>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <div class="card__slider-footer">
-                                    <h5><b>AVM</b> Не активен <i class="fa fa-info-circle" aria-hidden="true"></i></h5>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide card__slider-item">
-                                <div class="card__slider-wrap"
-                                     style="
-                                    background: url('img/svg/card.svg');
-                                    background-repeat: no-repeat;
-                                    background-size: cover;
-                                    background-position: right center;
-                                        "
-                                >
-                                    <div class="card__slider-header">
-                                        <div class="card__slider-logo">
-                                            <img src="img/svg/logo-white.svg" alt="">
-                                        </div>
-                                        <div class="btn-group card__slider-dropdown">
-                                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                            </button>
-                                            <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="#">Action</a>
-                                                <a class="dropdown-item" href="#">Another action</a>
-                                                <a class="dropdown-item" href="#">Something else here</a>
-                                                <div class="dropdown-divider"></div>
-                                                <a class="dropdown-item" href="#">Separated link</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card__slider-body"
-
-                                    >
-                                        <h3 class="card__slider-sum">180 000.0 UZS</h3>
-                                        <h4 class="card__slider-card-number">9987 1000 5466 9748</h4>
-
-                                        <div class="card__slider-text">
-                                            <h6 class="small-text">Название карты</h6>
-                                            <h5 class="card__slider-name">Karta Transportnaya</h5>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <div class="card__slider-footer">
-                                    <h5><b>AVM</b> Не активен <i class="fa fa-info-circle" aria-hidden="true"></i></h5>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide card__slider-item">
-                                <div class="card__slider-wrap"
-                                     style="
-                                    background: url('img/svg/card.svg');
-                                    background-repeat: no-repeat;
-                                    background-size: cover;
-                                    background-position: right center;
-                                        "
-                                >
-                                    <div class="card__slider-header">
-                                        <div class="card__slider-logo">
-                                            <img src="img/svg/logo-white.svg" alt="">
-                                        </div>
-                                        <div class="btn-group card__slider-dropdown">
-                                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                            </button>
-                                            <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="#">Action</a>
-                                                <a class="dropdown-item" href="#">Another action</a>
-                                                <a class="dropdown-item" href="#">Something else here</a>
-                                                <div class="dropdown-divider"></div>
-                                                <a class="dropdown-item" href="#">Separated link</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card__slider-body"
-
-                                    >
-                                        <h3 class="card__slider-sum">180 000.0 UZS</h3>
-                                        <h4 class="card__slider-card-number">9987 1000 5466 9748</h4>
-
-                                        <div class="card__slider-text">
-                                            <h6 class="small-text">Название карты</h6>
-                                            <h5 class="card__slider-name">Karta Transportnaya</h5>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <div class="card__slider-footer">
-                                    <h5><b>AVM</b> Не активен <i class="fa fa-info-circle" aria-hidden="true"></i></h5>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide card__slider-item">
-                                <div class="card__slider-wrap"
-                                     style="
-                                    background: url('img/svg/card.svg');
-                                    background-repeat: no-repeat;
-                                    background-size: cover;
-                                    background-position: right center;
-                                        "
-                                >
-                                    <div class="card__slider-header">
-                                        <div class="card__slider-logo">
-                                            <img src="img/svg/logo-white.svg" alt="">
-                                        </div>
-                                        <div class="btn-group card__slider-dropdown">
-                                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                            </button>
-                                            <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="#">Action</a>
-                                                <a class="dropdown-item" href="#">Another action</a>
-                                                <a class="dropdown-item" href="#">Something else here</a>
-                                                <div class="dropdown-divider"></div>
-                                                <a class="dropdown-item" href="#">Separated link</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card__slider-body"
-
-                                    >
-                                        <h3 class="card__slider-sum">180 000.0 UZS</h3>
-                                        <h4 class="card__slider-card-number">9987 1000 5466 9748</h4>
-
-                                        <div class="card__slider-text">
-                                            <h6 class="small-text">Название карты</h6>
-                                            <h5 class="card__slider-name">Karta Transportnaya</h5>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <div class="card__slider-footer">
-                                    <h5><b>AVM</b> Не активен <i class="fa fa-info-circle" aria-hidden="true"></i></h5>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide card__slider-item">
-                                <div class="card__slider-wrap"
-                                     style="
-                                    background: url('img/svg/card.svg');
-                                    background-repeat: no-repeat;
-                                    background-size: cover;
-                                    background-position: right center;
-                                        "
-                                >
-                                    <div class="card__slider-header">
-                                        <div class="card__slider-logo">
-                                            <img src="img/svg/logo-white.svg" alt="">
-                                        </div>
-                                        <div class="btn-group card__slider-dropdown">
-                                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                            </button>
-                                            <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="#">Action</a>
-                                                <a class="dropdown-item" href="#">Another action</a>
-                                                <a class="dropdown-item" href="#">Something else here</a>
-                                                <div class="dropdown-divider"></div>
-                                                <a class="dropdown-item" href="#">Separated link</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card__slider-body"
-
-                                    >
-                                        <h3 class="card__slider-sum">180 000.0 UZS</h3>
-                                        <h4 class="card__slider-card-number">9987 1000 5466 9748</h4>
-
-                                        <div class="card__slider-text">
-                                            <h6 class="small-text">Название карты</h6>
-                                            <h5 class="card__slider-name">Karta Transportnaya</h5>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <div class="card__slider-footer">
-                                    <h5><b>AVM</b> Не активен <i class="fa fa-info-circle" aria-hidden="true"></i></h5>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide card__slider-item">
-                                <div class="card__slider-wrap"
-                                     style="
-                                    background: url('img/svg/card.svg');
-                                    background-repeat: no-repeat;
-                                    background-size: cover;
-                                    background-position: right center;
-                                        "
-                                >
-                                    <div class="card__slider-header">
-                                        <div class="card__slider-logo">
-                                            <img src="img/svg/logo-white.svg" alt="">
-                                        </div>
-                                        <div class="btn-group card__slider-dropdown">
-                                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                            </button>
-                                            <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="#">Action</a>
-                                                <a class="dropdown-item" href="#">Another action</a>
-                                                <a class="dropdown-item" href="#">Something else here</a>
-                                                <div class="dropdown-divider"></div>
-                                                <a class="dropdown-item" href="#">Separated link</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card__slider-body"
-
-                                    >
-                                        <h3 class="card__slider-sum">180 000.0 UZS</h3>
-                                        <h4 class="card__slider-card-number">9987 1000 5466 9748</h4>
-
-                                        <div class="card__slider-text">
-                                            <h6 class="small-text">Название карты</h6>
-                                            <h5 class="card__slider-name">Karta Transportnaya</h5>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <div class="card__slider-footer">
-                                    <h5><b>AVM</b> Не активен <i class="fa fa-info-circle" aria-hidden="true"></i></h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal__footer">
-                <div class="modal__btn-holder">
-                    <button class="main-btn w-100 text-center">Купить тарифный план</button>
-                    <button class="secondary-btn w-100 text-center">Отмена</button>
-                </div>
-            </div>
-        </div>
-    </form>
-</div>
-
-
 
 <footer class="footer">
     <div class="my-container">
@@ -1480,6 +1123,127 @@
 </footer>
 
 
+<div class="modal fade modal__main" id="addCard" tabindex="-1" role="dialog" aria-hidden="true">
+    <form action="" class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content modal__content">
+            <div class="modal__header tac text-center">
+                <h5 class="modal__title  tac">Добавить карту</h5>
+                <h6 class="modal__subtitle mt-3">Введите 16-значный номер карты и
+                    срок ее действия</h6>
+                <button type="button" class="modal__close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal__body">
+
+                <div class="form-group">
+                    <label for="cardNumb">Номер карты/ срок действия</label>
+                    <label for="cardValidity" class="sr-only"></label>
+                    <div class="input-group input__group-wrap">
+                        <div class="input__group-left">
+                            <input type="text"
+                                   class="form-control cardNumb"
+                                   id="cardNumb"
+                            >
+                        </div>
+                        <div class="input__group-right">
+                            <input type="text"
+                                   id="cardValidity"
+                                   class="form-control cardValidity"
+                                   placeholder="/"
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="fio">Ф.И.О. владельца карты</label>
+                    <div class="input-group mb-2">
+                        <input type="text" class="form-control" id="fio" placeholder="">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text bg-transparent"><i class="fa fa-user-o" aria-hidden="true"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="custom-control custom-checkbox mt-3">
+                    <input type="checkbox" class="custom-control-input" id="setAsMainCard">
+                    <label class="custom-control-label" for="setAsMainCard">Сделать основной картой</label>
+                </div>
+
+            </div>
+            <div class="modal__footer  text-center mt-3">
+                <button class="main-btn d-flex justify-content-center w-100 tac">Добавить карту</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="modal fade modal__main" id="topUpBalance" tabindex="-1" role="dialog" aria-hidden="true">
+    <form action="" class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content modal__content">
+            <div class="modal__header tac text-center">
+                <h5 class="modal__title  tac">Пополнить баланс</h5>
+                <h6 class="modal__subtitle mt-3">Введите 16-значный номер карты и
+                    срок ее действия</h6>
+                <button type="button" class="modal__close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal__body pb-2">
+
+                <div class="form-group">
+                    <label for="cardNumber">Номер карты/ срок действия</label>
+                    <label for="cardValidity2" class="sr-only"></label>
+                    <div class="input-group input__group-wrap">
+                        <div class="input__group-left">
+                            <input type="text"
+                                   class="form-control cardNumb"
+                                   id="cardNumber"
+                            >
+                        </div>
+                        <div class="input__group-right">
+                            <input type="text"
+                                   id="cardValidity2"
+                                   class="form-control cardValidity"
+                                   placeholder="/"
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <h6 class="small-text">Карта</h6>
+                    <h5 class="bold-text text-color mt-2">Zuhra Umarova</h5>
+                </div>
+
+                <div class="form-group">
+                    <label for="">Сумма пополнения</label>
+                    <div class="input-group mb-2">
+                        <input type="text" class="form-control" id="" placeholder="">
+                        <small class="small-text input__info-text secondary-color">Комиссия 1% - 1400 UZS</small>
+                        <div class="input-group-prepend">
+                            <div class="input-group-text bg-transparent">
+                                <i class="fa fa-credit-card" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group d-flex flex-wrap align-items-center mt-5">
+                    <h6 content="small-text  grey-text">Итого к оплате:</h6>
+                    <h4 class="bold-text mla modal__content-amount">141 400.00 UZS</h4>
+                </div>
+
+            </div>
+            <div class="modal__footer  text-center mt-3">
+                <button class="main-btn d-flex justify-content-center w-100 tac">Добавить карту</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+
 </body>
 
 <script src="libs/jquery-3.5.1.min.js"></script>
@@ -1494,25 +1258,15 @@
 <script src="libs/swiper/swiper-bundle.min.js"></script>
 
 <script>
-
-  let swiper = new Swiper('.modal__slider', {
-    slidesPerView: 1,
-    spaceBetween: 15,
-    freeMode: true,
-    navigation: {
-    },
-  });
-
-  let swiper2 = new Swiper('.tariffs__slider', {
+  let swiper = new Swiper('.card__slider', {
     slidesPerView: 3,
     spaceBetween: 15,
     freeMode: true,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      // nextEl: '.swiper-button-next',
+      // prevEl: '.swiper-button-prev',
     },
   });
-
 
 </script>
 
