@@ -2564,10 +2564,6 @@ label {
   font-size: 10px;
 }
 
-.modal__slider .card__slider-item {
-  margin-right: 15px;
-}
-
 .faq {
   padding-left: 0 !important;
   -webkit-box-shadow: none;
@@ -3134,6 +3130,7 @@ label {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-bottom: 20px;
 }
 
 .footer__main-left {
@@ -4046,7 +4043,7 @@ label {
 }
 
 .card__slider-dropdown {
-  margin-left: auto;
+  margin-left: 15px;
 }
 
 .card__slider-dropdown .dropdown-menu {
@@ -4074,14 +4071,13 @@ label {
           align-items: center;
   padding: 5px 8px;
   max-width: 131px;
-  width: 100%;
   margin-left: auto;
   border-radius: 18px;
   line-height: normal;
 }
 
 .card__slider .warning__block img {
-  width: 17px;
+  width: 17px !important;
   height: 17px;
   margin-right: 6px;
 }
@@ -4110,7 +4106,7 @@ label {
 
 .card__slider-card-number {
   color: #969cc3;
-  font-size: 16px;
+  font-size: 15px;
   margin-bottom: 10px;
 }
 
@@ -4288,6 +4284,63 @@ label {
   font-size: 14px;
 }
 
+.slider__nav .owl-nav {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  top: 50%;
+  -webkit-transform: translateY(-50%) !important;
+      -ms-transform: translateY(-50%) !important;
+          transform: translateY(-50%) !important;
+  position: absolute;
+  width: 100%;
+}
+
+.slider__nav .owl-nav button {
+  width: 42px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  background: #fff !important;
+  -webkit-box-shadow: 0 6px 30px rgba(165, 166, 180, 0.2);
+          box-shadow: 0 6px 30px rgba(165, 166, 180, 0.2);
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+}
+
+.slider__nav .owl-nav button span {
+  margin: auto;
+  color: #232455;
+  font-size: 30px;
+  margin-top: -3px !important;
+  bottom: 20px !important;
+}
+
+.slider__nav .owl-prev {
+  position: absolute;
+  left: -20px;
+  -webkit-transform: translateY(-50%) !important;
+      -ms-transform: translateY(-50%) !important;
+          transform: translateY(-50%) !important;
+}
+
+.slider__nav .owl-next {
+  position: absolute;
+  -webkit-transform: translateY(-50%) !important;
+      -ms-transform: translateY(-50%) !important;
+          transform: translateY(-50%) !important;
+  right: -20px;
+}
+
 @media (max-width: 1450px) {
   .my-container {
     max-width: 1230px;
@@ -4448,12 +4501,6 @@ label {
     max-width: 350px;
   }
 
-  .swiper-wrapper {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-
   .header__main {
     padding-right: 60px;
   }
@@ -4500,6 +4547,43 @@ label {
   .history__list-wrap {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+
+  .card__slider .warning__block {
+    max-width: unset;
+  }
+
+  .card__slider-item {
+    max-width: 400px;
+    margin: auto;
+  }
+
+  .slider__nav .owl-prev {
+    left: 0 !important;
+  }
+
+  .slider__nav .owl-next {
+    right: 0 !important;
+  }
+
+  .modal__slider .owl-prev {
+    left: -20px !important;
+  }
+
+  .modal__slider .owl-next {
+    right: -20px !important;
+  }
+
+  .tariffs__slider .owl-prev {
+    left: -20px !important;
+  }
+
+  .tariffs__slider .owl-next {
+    right: -20px !important;
+  }
+
+  .footer__main {
+    padding-bottom: 0;
   }
 }
 
@@ -4781,6 +4865,30 @@ label {
     width: 100%;
     margin-right: 0;
   }
+
+  .slider__nav .owl-prev {
+    left: -20px !important;
+  }
+
+  .slider__nav .owl-next {
+    right: -20px !important;
+  }
+
+  .balance__history {
+    margin-top: 30px;
+  }
+
+  .tariffs__cabinet-row {
+    margin-bottom: 30px;
+  }
+
+  .tariffs__slider .tariffs__current-body {
+    padding: 20px;
+  }
+
+  .tariffs__slider .tariffs__current-right {
+    padding-left: 20px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -4886,15 +4994,6 @@ label {
 
   .tariffs__price {
     width: 100%;
-  }
-
-  .validators__swiper .swiper-pagination-bullets {
-    bottom: 10px !important;
-  }
-
-  .validators__swiper .swiper-pagination-bullet {
-    width: 10px;
-    height: 10px;
   }
 
   .guidance__content-left {
@@ -5075,6 +5174,10 @@ label {
     max-width: unset;
     margin-left: 0;
     margin-bottom: 0;
+  }
+
+  .card__slider-body {
+    padding: 0 30px 10px;
   }
 }
 
