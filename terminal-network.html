@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Index</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Index</title>
 
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="libs/font-awesome.min.css">
 <link rel="stylesheet" href="libs/reset.css">
 <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
@@ -16,7 +16,7 @@
 
 
 
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 
 </head>
 <body>
@@ -151,7 +151,7 @@
                                     <a class="dropdown__link" href="instruction.html">Инструкции</a>
                                 </li>
                                 <li class="dropdown__item">
-                                    <a class="dropdown__link" href="#">FAQ</a>
+                                    <a class="dropdown__link" href="faq.html">FAQ</a>
                                 </li>
                             </ul>
                         </li>
@@ -469,9 +469,9 @@
 
 <main class="main">
 
-  <div class="my-container">
-    <div class="content__holder">
-      <div class="sidebar">
+    <div class="my-container">
+        <div class="content__holder">
+            <div class="sidebar">
     <ul class="sidebar__wrapper">
         <li class="sidebar__item">
             <a href="transport-cards.html" class="sidebar__link active">Транспортные карты</a>
@@ -500,48 +500,48 @@
         </li>
 
         <li class="sidebar__item">
-            <a href="" class="sidebar__link">FAQ</a>
+            <a href="faq.html" class="sidebar__link">FAQ</a>
         </li>
 
     </ul>
 </div>
 
 
-      <div class="content__main">
+            <div class="content__main">
 
-        <div class="content__top">
-          <h2 class="content__title"> В сети терминалов </h2>
-        </div>
+                <div class="content__top">
+                    <h2 class="content__title"> В сети терминалов </h2>
+                </div>
 
-        <div class="content__wrapper">
+                <div class="content__wrapper">
 
-          <div class="content__photo">
-            <img src="img/terminal.jpg" alt="">
-          </div>
+                    <div class="content__photo">
+                        <img src="img/terminal.jpg" alt="">
+                    </div>
 
-          <div class="content__text">
+                    <div class="content__text">
 
-            <div class="terminal__network">
-              <div class="terminal__network-icon"><img src="img/svg/terminal-icon.svg" alt=""></div>
-              <div class="terminal__network-content">
-                <b>Активация и пополнение баланса транспортных карт:</b>
-                <p> Услуга активации и пополнения транспортных карт через терминалы самообслуживания уже доступна и ниже приведена карта расположения инфокиосков</p>
+                        <div class="terminal__network">
+                            <div class="terminal__network-content">
+                                <b>Активация и пополнение баланса транспортных карт:</b>
+                                <p> Услуга активации и пополнения транспортных карт через терминалы самообслуживания уже
+                                    доступна и ниже приведена карта расположения инфокиосков</p>
 
-                <button class="main-btn">Показать на карте</button>
-              </div>
+                                <button class="main-btn">Показать на карте</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="terminal__map" id="map"></div>
+
+
+                </div>
 
             </div>
-
-          </div>
-
-          <div class="terminal__map" id="map"></div>
-
-
         </div>
-
-      </div>
     </div>
-  </div>
 
 
 </main>
@@ -722,117 +722,120 @@
 
     function init() {
       const myMap = new ymaps.Map("map", {
-                center: [41.269641 , 66.446016],
-                zoom: 5,
-              }, {
-                searchControlProvider: 'yandex#search'
-              }),
+            center: [41.269641, 66.446016],
+            zoom: 5,
+          }, {
+            searchControlProvider: 'yandex#search'
+          }),
 
-              // Создаем геообъект с типом геометрии "Точка".
-              myGeoObject = new ymaps.GeoObject(),
-              myPieChart = new ymaps.Placemark(
+          // Создаем геообъект с типом геометрии "Точка".
+          myGeoObject = new ymaps.GeoObject(),
+          myPieChart = new ymaps.Placemark(
 
-              );
+          );
       myMap.behaviors.disable('scrollZoom');
       myMap.geoObjects
-              .add(myGeoObject)
-              .add(myPieChart)
-              .add(new ymaps.Placemark([40.781517,72.334620], {
-                balloonContent: ' <strong>Andijan</strong>'
-              }, {
-                iconLayout: 'default#image',
-                iconImageHref: 'img/marker.png',
-                iconImageSize: [13, 18],
-              }))
-              .add(new ymaps.Placemark([39.783007,64.418338], {
-                balloonContent: '<strong>Buxara</strong> '
-              }, {
-                iconLayout: 'default#image',
-                iconImageHref: 'img/marker.png',
-                iconImageSize: [13, 18],
-              }))
-              .add(new ymaps.Placemark([40.103406,67.837231], {
-                balloonContent: ' <strong>Djizzakh</strong>'
-              }, {
-                iconLayout: 'default#image',
-                iconImageHref: 'img/marker.png',
-                iconImageSize: [13, 18],
-              }))
-              .add(new ymaps.Placemark([40.996641,71.637361], {
-                balloonContent: ' <strong>Namangan</strong>'
-              }, {
-                iconLayout: 'default#image',
-                iconImageHref: 'img/marker.png',
-                iconImageSize: [13, 18],
-              }))
-              .add(new ymaps.Placemark([42.456084, 59.611377], {
-                balloonContent: ' <strong>Nukus</strong>'
-              }, {
-                iconLayout: 'default#image',
-                iconImageHref: 'img/marker.png',
-                iconImageSize: [13, 18],
-              }))
-              .add(new ymaps.Placemark([39.402046, 66.537943], {
-                balloonContent: ' <strong>Samarkand</strong>'
-              }, {
-                iconLayout: 'default#image',
-                iconImageHref: 'img/marker.png',
-                iconImageSize: [13, 18],
-              }))
-              .add(new ymaps.Placemark([37.224879, 67.323740], {
-                balloonContent: ' <strong>Termez</strong>',
-                iconCaption: 'Очень длиннный, но невероятно интересный текст'
-              }, {
-                iconLayout: 'default#image',
-                iconImageHref: 'img/marker.png',
-                iconImageSize: [13, 18],
-              }))
-              .add(new ymaps.Placemark([41.561344, 60.626888], {
-                balloonContent: ' <strong>Urgench</strong>',
-                iconCaption: 'Очень длиннный, но невероятно интересный текст'
-              }, {
-                iconLayout: 'default#image',
-                iconImageHref: 'img/marker.png',
-                iconImageSize: [13, 18],
-              }))
-              .add(new ymaps.Placemark([40.382263, 71.785412], {
-                balloonContent: ' <strong>Fargona</strong>',
-                iconCaption: 'Очень длиннный, но невероятно интересный текст'
-              }, {
-                iconLayout: 'default#image',
-                iconImageHref: 'img/marker.png',
-                iconImageSize: [13, 18],
-              }))
-              .add(new ymaps.Placemark([38,8379660,65,7978660], {
-                balloonContent: ' <strong>Qarshi</strong>',
-                iconCaption: 'Очень длиннный, но невероятно интересный текст'
-              }, {
-                iconLayout: 'default#image',
-                iconImageHref: 'img/marker.png',
-                iconImageSize: [13, 18],
-              }))
-              .add(new ymaps.Placemark([40.491561,68.775203], {
-                balloonContent: ' <strong>Gulistan</strong>',
-                iconCaption: 'Очень длиннный, но невероятно интересный текст'
-              }, {
-                iconLayout: 'default#image',
-                iconImageHref: 'img/marker.png',
-                iconImageSize: [13, 18],
-              }))
-              .add(new ymaps.Placemark([40,1106,65,65,37456], {
-                balloonContent: ' <strong>Navoi</strong>',
-                iconCaption: 'Очень длиннный, но невероятно интересный текст'
-              }, {
-                iconLayout: 'default#image',
-                iconImageHref: 'img/marker.png',
-                iconImageSize: [13, 18],
-              }));
+          .add(myGeoObject)
+          .add(myPieChart)
+          .add(new ymaps.Placemark([40.781517, 72.334620], {
+            balloonContent: ' <strong>Andijan</strong>'
+          }, {
+            iconLayout: 'default#image',
+            iconImageHref: 'img/marker.png',
+            iconImageSize: [13, 18],
+          }))
+          .add(new ymaps.Placemark([39.783007, 64.418338], {
+            balloonContent: '<strong>Buxara</strong> '
+          }, {
+            iconLayout: 'default#image',
+            iconImageHref: 'img/marker.png',
+            iconImageSize: [13, 18],
+          }))
+          .add(new ymaps.Placemark([40.103406, 67.837231], {
+            balloonContent: ' <strong>Djizzakh</strong>'
+          }, {
+            iconLayout: 'default#image',
+            iconImageHref: 'img/marker.png',
+            iconImageSize: [13, 18],
+          }))
+          .add(new ymaps.Placemark([40.996641, 71.637361], {
+            balloonContent: ' <strong>Namangan</strong>'
+          }, {
+            iconLayout: 'default#image',
+            iconImageHref: 'img/marker.png',
+            iconImageSize: [13, 18],
+          }))
+          .add(new ymaps.Placemark([42.456084, 59.611377], {
+            balloonContent: ' <strong>Nukus</strong>'
+          }, {
+            iconLayout: 'default#image',
+            iconImageHref: 'img/marker.png',
+            iconImageSize: [13, 18],
+          }))
+          .add(new ymaps.Placemark([39.402046, 66.537943], {
+            balloonContent: ' <strong>Samarkand</strong>'
+          }, {
+            iconLayout: 'default#image',
+            iconImageHref: 'img/marker.png',
+            iconImageSize: [13, 18],
+          }))
+          .add(new ymaps.Placemark([37.224879, 67.323740], {
+            balloonContent: ' <strong>Termez</strong>',
+            iconCaption: 'Очень длиннный, но невероятно интересный текст'
+          }, {
+            iconLayout: 'default#image',
+            iconImageHref: 'img/marker.png',
+            iconImageSize: [13, 18],
+          }))
+          .add(new ymaps.Placemark([41.561344, 60.626888], {
+            balloonContent: ' <strong>Urgench</strong>',
+            iconCaption: 'Очень длиннный, но невероятно интересный текст'
+          }, {
+            iconLayout: 'default#image',
+            iconImageHref: 'img/marker.png',
+            iconImageSize: [13, 18],
+          }))
+          .add(new ymaps.Placemark([40.382263, 71.785412], {
+            balloonContent: ' <strong>Fargona</strong>',
+            iconCaption: 'Очень длиннный, но невероятно интересный текст'
+          }, {
+            iconLayout: 'default#image',
+            iconImageHref: 'img/marker.png',
+            iconImageSize: [13, 18],
+          }))
+          .add(new ymaps.Placemark([38, 8379660, 65, 7978660], {
+            balloonContent: ' <strong>Qarshi</strong>',
+            iconCaption: 'Очень длиннный, но невероятно интересный текст'
+          }, {
+            iconLayout: 'default#image',
+            iconImageHref: 'img/marker.png',
+            iconImageSize: [13, 18],
+          }))
+          .add(new ymaps.Placemark([40.491561, 68.775203], {
+            balloonContent: ' <strong>Gulistan</strong>',
+            iconCaption: 'Очень длиннный, но невероятно интересный текст'
+          }, {
+            iconLayout: 'default#image',
+            iconImageHref: 'img/marker.png',
+            iconImageSize: [13, 18],
+          }))
+          .add(new ymaps.Placemark([40, 1106, 65, 65, 37456], {
+            balloonContent: ' <strong>Navoi</strong>',
+            iconCaption: 'Очень длиннный, но невероятно интересный текст'
+          }, {
+            iconLayout: 'default#image',
+            iconImageHref: 'img/marker.png',
+            iconImageSize: [13, 18],
+          }));
     }
 
   } catch (e) {
 
   }
-  function initMap() {alert("ok");}
+
+  function initMap() {
+    alert("ok");
+  }
 
 </script>
 

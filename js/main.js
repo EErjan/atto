@@ -1,16 +1,8 @@
-try {
-    $(document).ready(function() {
-        $(".fancybox").fancybox();
-    });
-} catch (e) {
-
-}
 
 $(document).on("click", ".js-toggle", function(e) {
     e.preventDefault();
     $("body").toggleClass("has-menu");
 });
-
 
 
 // Accordion start
