@@ -269,11 +269,29 @@ ul li {
   width: 100%;
   display: block;
   background-color: transparent;
-  color: #8384A3;
+  color: #232455;
+  font-weight: normal;
+  font-size: 14px;
+  font-family: "SFProDisplay-Semibold", sans-serif !important;
 }
 
 .accordion li:last-child .link {
   border-bottom: 0;
+}
+
+.submenu__list-title {
+  font-size: 16px;
+  padding: 8px 10px;
+  padding-left: 15px !important;
+}
+
+.submenu__list-holder {
+  padding: 15px 0;
+  background: #fafafa;
+}
+
+.submenu__list-holder a {
+  padding: 5px 20px 5px 30px !important;
 }
 
 /** ========================
@@ -323,6 +341,7 @@ ul li {
   display: none;
   background: #fafafa;
   font-size: 0.95em;
+  padding: 10px 0;
 }
 
 .submenu li {
@@ -333,8 +352,9 @@ ul li {
   display: block;
   text-decoration: none;
   color: #232455;
-  padding: 1rem;
-  padding-left: 25px;
+  padding: 8px 10px;
+  padding-left: 15px;
+  font-size: 14px;
   -webkit-transition: all 0.25s ease;
   -o-transition: all 0.25s ease;
   transition: all 0.25s ease;
@@ -2919,7 +2939,19 @@ label {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 0;
+  padding: 7px 0;
+}
+
+.header__user .dropdown-menu {
+  position: absolute;
+  top: calc(100% - 0px) !important;
+  border: none;
+  -webkit-box-shadow: 0 0 20px rgba(165, 166, 180, 0.13);
+          box-shadow: 0 0 20px rgba(165, 166, 180, 0.13);
+  background-color: #FFFFFF;
+  z-index: 2;
+  padding: 0;
+  border-radius: 0;
 }
 
 .header__user-photo {
@@ -4807,6 +4839,20 @@ label {
   .tariffs__slider .tariffs__current-right {
     padding-left: 20px;
   }
+
+  .main__slider-item {
+    padding: 50px 0;
+  }
+
+  .main__slider .mobile-app {
+    margin-top: 30px;
+  }
+
+  .main__slider .owl-dot {
+    width: 10px;
+    height: 10px;
+    margin: 10px 7px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -5097,6 +5143,32 @@ label {
   .card__slider-body {
     padding: 0 30px 10px;
   }
+
+  .main__slider-item {
+    min-height: calc(100vh - 62px);
+  }
+
+  .main__slider-ul {
+    margin-top: 10px;
+  }
+
+  .main__slider-ul li {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .main__slider-title {
+    font-size: 24px;
+  }
+
+  .main__slider-right {
+    max-width: 190px;
+  }
+
+  .main__slider-text {
+    margin-top: 15px;
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 380px) {
@@ -5285,5 +5357,9 @@ label {
     width: 100%;
     margin-left: 0;
     margin-top: 10px;
+  }
+
+  .main__slider-item {
+    min-height: calc(100vh - 55px);
   }
 }
