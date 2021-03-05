@@ -161,6 +161,7 @@ ul li {
 }
 
 .mobile__menu {
+  display: none;
   max-width: 400px;
   width: 100%;
   position: fixed;
@@ -1731,6 +1732,10 @@ label {
 .news__socials-item:hover {
   top: -3px;
   color: #4CB0FE;
+}
+
+.news__slider .owl-nav.disabled {
+  display: none !important;
 }
 
 .pagination {
@@ -4422,6 +4427,10 @@ label {
 
   .settings__photo-remove {
     margin-right: 15px;
+  }
+
+  .mobile__menu {
+    display: block;
   }
 }
 

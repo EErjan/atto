@@ -15,6 +15,7 @@
 
 
 
+  <link rel="stylesheet" href="libs/owlcarousel/owl.carousel.min.css" type="text/css"/>
 
 </head>
 <body>
@@ -471,6 +472,7 @@
 </div>
 
 
+
 <main class="main">
 
   <div class="my-container">
@@ -527,8 +529,14 @@
 
         <div class="content__wrapper">
 
-          <div class="content__photo">
-            <img src="img/cards.jpg" alt="">
+          <div class="owl-carousel owl-theme news__slider validators__slider content__photo">
+            <div class="item validators__slider-item">
+              <img src="img/validators.jpg" alt="">
+            </div>
+            <div class="item validators__slider-item">
+              <img src="img/validators.jpg" alt="">
+            </div>
+
           </div>
 
           <div class="content__text">
@@ -755,15 +763,41 @@
     </div>
 </footer>
 
-
-</body>
-
 <script src="libs/jquery-3.5.1.min.js"></script>
 <script src="libs/bootstrap/js/popper.js"></script>
 <script src="libs/bootstrap/js/bootstrap.min.js"></script>
 <script src="libs/inputMask.min.js"></script>
 <script src="js/main.js"></script>
 
+
+<script src="libs/owlcarousel/owl.carousel.min.js"></script>
+
+
+<script>
+  $('.news__slider').owlCarousel({
+    loop:false,
+    dots: true,
+    margin:10,
+    mouseDrag: false,
+    infinity: false,
+    nav:false,
+    autoplayHoverPause: true,
+    smartSpeed: 800,
+    responsive:{
+      0:{
+        items:1
+      },
+      600:{
+        items:1
+      },
+      1000:{
+        items:1
+      }
+    }
+  })
+</script>
+
+</body>
 
 
 </html>
