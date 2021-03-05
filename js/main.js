@@ -1,4 +1,8 @@
 
+setTimeout(function(){
+  $('.preloader').fadeOut();
+}, 1000);
+
 $(document).on("click", ".js-toggle", function(e) {
     e.preventDefault();
     $("body").toggleClass("has-menu");
