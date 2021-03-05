@@ -199,6 +199,7 @@ ul li {
 }
 
 .menu-overlay {
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
@@ -4430,6 +4431,10 @@ label {
   }
 
   .mobile__menu {
+    display: block;
+  }
+
+  .menu-overlay {
     display: block;
   }
 }
